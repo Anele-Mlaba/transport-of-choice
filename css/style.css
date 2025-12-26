@@ -29,11 +29,51 @@ Table of Contents:
 /* ----------------------------------------------------
 	1) BOOTSTRAP OVERRIDE
 ------------------------------------------------------- */
+/* Import a clean modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.nivo-caption,
+.nivo-html-caption {
+  position: absolute;
+  top: 80%; /* vertical center */
+  left: 50%; /* horizontal center */
+  transform: translate(-50%, -50%); /* perfect centering */
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 4rem; /* 2x bigger size */
+  text-align: center;
+  color: #FF9800;
+
+  z-index: 500;
+  width: auto;
+  max-width: 90%; /* still responsive */
+  background: none !important; /* remove background */
+  padding: 1; /* remove extra spacing */
+  border: none;
+}
+
+/* Optional: fade-in animation */
+.nivo-caption,
+.nivo-html-caption {
+  opacity: 0;
+  transition: opacity .6s ease;
+}
+.nivo-caption.active,
+.nivo-html-caption.active {
+  opacity: 1;
+}
+
 .tiktok{
 	position: relative;
 	z-index: 1;
 	fill: white;
 }
+
+.nivoSlider img {
+    filter: blur(4px); /* Change number for more/less blur */
+}
+
 .btn{
 	border-radius: 0px;
 	text-decoration: none;
