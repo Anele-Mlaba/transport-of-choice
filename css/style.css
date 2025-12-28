@@ -41,9 +41,9 @@ Table of Contents:
 
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 4rem; /* 2x bigger size */
+  font-size: 3rem; /* 2x bigger size */
   text-align: center;
-  color: #FF9800;
+  color: #FFDD00;
 
   z-index: 500;
   width: auto;
@@ -51,6 +51,7 @@ Table of Contents:
   background: none !important; /* remove background */
   padding: 1; /* remove extra spacing */
   border: none;
+  line-height: 0.9;
 }
 
 /* Optional: fade-in animation */
@@ -71,7 +72,7 @@ Table of Contents:
 }
 
 .nivoSlider img {
-    filter: blur(4px); /* Change number for more/less blur */
+    filter: blur(1px); /* Change number for more/less blur */
 }
 
 .btn{
